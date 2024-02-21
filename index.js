@@ -16,7 +16,7 @@ let indexVal = 0;
 for (let i = 0; i < 5; i++) {
     indexVal = scrapedSearch.indexOf("href", scrapedSearch.indexOf(ID_STRING, indexVal)) + 6;
     let endIndex = scrapedSearch.indexOf("\"", indexVal);
-    searchResults.push(scrapedSearch.substring(indexVal, endIndex));
+    searchResults.push("https://www.imdb.com/" + scrapedSearch.substring(indexVal, endIndex));
 }
 
 console.log(searchResults);
